@@ -1,0 +1,46 @@
+{
+    "name": "mateusjatenee/laravel-wavy",
+    "description": "Plivo SMS notifications driver for Laravel",
+    "keywords": [
+        "laravel",
+        "notifications",
+        "wavy"
+    ],
+    "homepage": "https://github.com/mateusjatenee/laravel-wavy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateus Guimarães",
+            "email": "mateus@mguimaraes.co",
+            "homepage": "https://mguimaraes.co",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^6.2",
+        "illuminate/events": "~5.5 || ~6.0",
+        "illuminate/notifications": "~5.5 || ~6.0",
+        "illuminate/support": "~5.5 || ~6.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mateusjatenee\\Wavy\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mateusjatenee\\Wavy\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
